@@ -132,7 +132,7 @@ public async Task<EmployeeResponse> Create(EmployeeRequest request)
 
 
 # Question 7
-Ou doit se faire la validation des regles metier ?
+Ou doit se faire la validation des régles metier ?
 
 * [ ] Dans le Controller
 * [ ] Dans le Service
@@ -144,7 +144,7 @@ Ou doit se faire la validation des regles metier ?
 
 
 # Question 8
-Que fait la methode ToListAsync() dans EF Core ?
+Que fait la méthode ToListAsync() dans EF Core ?
 
 * [ ] Cree une liste vide
 * [ ] Execute la requete LINQ et retourne les resultats
@@ -156,7 +156,7 @@ Que fait la methode ToListAsync() dans EF Core ?
 
 
 # Question 9
-Quelle est la difference entre un Service et un Repository ?
+Quelle est la différence entre un Service et un Repository ?
 
 * [ ] Pas de difference
 * [ ] Service = logique metier, Repository = acces donnees
@@ -220,7 +220,7 @@ public class EmployeeResponse
 }
 ```
 
-**Question** : Pourquoi separer les Entities des DTOs ?
+**Question** : Pourquoi séparer les Entities des DTOs ?
 
 * [ ] Pour rendre le code plus complexe
 * [ ] Pour separer le modele de donnees du modele de communication API
@@ -232,7 +232,7 @@ public class EmployeeResponse
 
 
 # Question 13
-Quelle est la difference entre Request et Response DTOs ?
+Quelle est la différence entre Request et Response DTOs ?
 
 * [ ] Pas de difference
 * [ ] Request = donnees entrantes, Response = donnees sortantes
@@ -313,7 +313,7 @@ Pourquoi UserResponse n'expose pas PasswordHash ?
 
 
 # Question 18
-Dans EmployeeResponse, la propriete Age est :
+Dans EmployeeResponse, la propriête Age est :
 
 * [ ] Stockee en base de donnees
 * [ ] Calculee automatiquement a partir de BirthDate
@@ -348,7 +348,7 @@ Pourquoi mapper Employee.Title.Description vers EmployeeResponse.TitleDescriptio
 <br/>
 
 
-## Partie C : CORS et Securite (Questions 21-30)
+## Partie C : CORS et Sécurité (Questions 21-30)
 
 # Question 21
 
@@ -392,7 +392,7 @@ builder.Services.AddCors(options =>
 });
 ```
 
-**Question** : Quelle origine est autorisee par la politique CORS ?
+**Question** : Quelle origine est autorisée par la politique CORS ?
 
 * [ ] Toutes les origines
 * [ ] http://localhost:3000 et https://localhost:3000
@@ -515,7 +515,7 @@ Que fait UseHttpsRedirection() ?
 
 Cette cle fait 64 caracteres.
 
-**Question** : Quelle est la longueur minimale recommandee pour une cle secrete JWT ?
+**Question** : Quelle est la longueur minimale recommandee pour une cle sécrête JWT ?
 
 * [ ] 8 caracteres
 * [ ] 16 caracteres
