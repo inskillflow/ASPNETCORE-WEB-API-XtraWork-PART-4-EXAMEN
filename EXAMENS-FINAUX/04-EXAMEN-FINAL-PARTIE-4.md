@@ -18,9 +18,9 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 ```
 
 **Questions** :
-1. Expliquez pourquoi on utilise `AddScoped` et non `AddSingleton` (4 points)
-2. Pourquoi AuthService utilise une interface `IAuthService` ? (3 points)
-3. Quel serait le probleme si on inversait l'ordre (Services avant Repositories) ? (3 points)
+1. Expliquez pourquoi on utilise `AddScoped` et non `AddSingleton` 
+2. Pourquoi AuthService utilise une interface `IAuthService` ? 
+3. Quel serait le probleme si on inversait l'ordre (Services avant Repositories) ? 
 
 <br/>
 <br/>
@@ -68,9 +68,9 @@ public async Task<EmployeeResponse> Create(EmployeeRequest request)
 ```
 
 **Questions** :
-1. Pourquoi verifier si le titre existe AVANT de creer l'employe ? (5 points)
-2. Expliquez pourquoi on fait GetByIdAsync apres CreateAsync (5 points)
-3. Pourquoi mapper vers EmployeeResponse au lieu de retourner Employee directement ? (5 points)
+1. Pourquoi verifier si le titre existe AVANT de creer l'employe ? 
+2. Expliquez pourquoi on fait GetByIdAsync apres CreateAsync 
+3. Pourquoi mapper vers EmployeeResponse au lieu de retourner Employee directement ? 
 
 <br/>
 <br/>
@@ -90,9 +90,9 @@ public async Task<List<Employee>> GetAllAsync()
 ```
 
 **Questions** :
-1. Qu'est-ce que `.Include(e => e.Title)` et pourquoi est-ce important ? (6 points)
-2. Que se passerait-il sans `.Include()` ? (3 points)
-3. Pourquoi utiliser `ToListAsync()` a la fin ? (3 points)
+1. Qu'est-ce que `.Include(e => e.Title)` et pourquoi est-ce important ? 
+2. Que se passerait-il sans `.Include()` ? 
+3. Pourquoi utiliser `ToListAsync()` a la fin ? 
 
 <br/>
 <br/>
@@ -129,9 +129,9 @@ private string GenerateJwtToken(User user)
 ```
 
 **Questions** :
-1. Expliquez le role de chaque claim ajoute au JWT (6 points)
-2. Pourquoi utiliser HMAC-SHA256 pour la signature ? (4 points)
-3. Quelle est la duree de vie du token et pourquoi 24 heures ? (5 points)
+1. Expliquez le role de chaque claim ajoute au JWT 
+2. Pourquoi utiliser HMAC-SHA256 pour la signature ? 
+3. Quelle est la duree de vie du token et pourquoi 24 heures ? 
 
 <br/>
 <br/>
@@ -156,8 +156,8 @@ public class EmployeeController : ControllerBase
 ```
 
 **Questions** :
-1. Expliquez chaque attribut sur la classe ([ApiController], [Route], etc.) (6 points)
-2. Qu'est-ce que l'injection de dependance dans le constructeur ? (4 points)
+1. Expliquez chaque attribut sur la classe ([ApiController], [Route], etc.) 
+2. Qu'est-ce que l'injection de dependance dans le constructeur ? 
 
 <br/>
 <br/>
@@ -184,9 +184,9 @@ public async Task<ActionResult<EmployeeResponse>> Create([FromBody] EmployeeRequ
 ```
 
 **Questions** :
-1. Que fait `CreatedAtAction` et pourquoi l'utiliser ? (5 points)
-2. Pourquoi attraper `NotFoundException` et retourner `BadRequest` ? (4 points)
-3. Expliquez `[FromBody]` (3 points)
+1. Que fait `CreatedAtAction` et pourquoi l'utiliser ? 
+2. Pourquoi attraper `NotFoundException` et retourner `BadRequest` ? 
+3. Expliquez `[FromBody]` 
 
 <br/>
 <br/>
@@ -212,8 +212,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 ```
 
 **Questions** :
-1. Expliquez chaque validation (ValidateIssuer, ValidateAudience, etc.) (7 points)
-2. Pourquoi valider la cle de signature ? (3 points)
+1. Expliquez chaque validation (ValidateIssuer, ValidateAudience, etc.) 
+2. Pourquoi valider la cle de signature ? 
 
 <br/>
 <br/>
@@ -229,8 +229,8 @@ app.MapControllers();
 ```
 
 **Questions** :
-1. Pourquoi cet ordre specifique ? (5 points)
-2. Que se passerait-il si `UseAuthentication` venait avant `UseCors` ? (3 points)
+1. Pourquoi cet ordre specifique ? 
+2. Que se passerait-il si `UseAuthentication` venait avant `UseCors` ? 
 
 <br/>
 <br/>
@@ -249,8 +249,8 @@ modelBuilder.Entity<Employee>(entity =>
 ```
 
 **Questions** :
-1. Expliquez la relation configuree (HasOne, WithMany) (5 points)
-2. Que fait `OnDelete(DeleteBehavior.Restrict)` ? (3 points)
+1. Expliquez la relation configuree (HasOne, WithMany) 
+2. Que fait `OnDelete(DeleteBehavior.Restrict)` ? 
 
 <br/>
 <br/>
