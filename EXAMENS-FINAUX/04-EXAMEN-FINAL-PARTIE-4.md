@@ -20,7 +20,7 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 **Questions** :
 1. Expliquez pourquoi on utilise `AddScoped` et non `AddSingleton` 
 2. Pourquoi AuthService utilise une interface `IAuthService` ? 
-3. Quel serait le probleme si on inversait l'ordre (Services avant Repositories) ? 
+3. Quel serait le problème si on inversait l'ordre (Services avant Repositories) ? 
 
 <br/>
 <br/>
@@ -68,7 +68,7 @@ public async Task<EmployeeResponse> Create(EmployeeRequest request)
 ```
 
 **Questions** :
-1. Pourquoi verifier si le titre existe AVANT de creer l'employe ? 
+1. Pourquoi vérifier si le titre existe AVANT de créer l'employe ? 
 2. Expliquez pourquoi on fait GetByIdAsync apres CreateAsync 
 3. Pourquoi mapper vers EmployeeResponse au lieu de retourner Employee directement ? 
 
@@ -131,7 +131,7 @@ private string GenerateJwtToken(User user)
 **Questions** :
 1. Expliquez le role de chaque claim ajoute au JWT 
 2. Pourquoi utiliser HMAC-SHA256 pour la signature ? 
-3. Quelle est la duree de vie du token et pourquoi 24 heures ? 
+3. Quelle est la durée de vie du token et pourquoi 24 heures ? 
 
 <br/>
 <br/>
@@ -157,7 +157,7 @@ public class EmployeeController : ControllerBase
 
 **Questions** :
 1. Expliquez chaque attribut sur la classe ([ApiController], [Route], etc.) 
-2. Qu'est-ce que l'injection de dependance dans le constructeur ? 
+2. Qu'est-ce que l'injection de dépendance dans le constructeur ? 
 
 <br/>
 <br/>
@@ -229,7 +229,7 @@ app.MapControllers();
 ```
 
 **Questions** :
-1. Pourquoi cet ordre specifique ? 
+1. Pourquoi cet ordre spécifique ? 
 2. Que se passerait-il si `UseAuthentication` venait avant `UseCors` ? 
 
 <br/>
@@ -257,7 +257,7 @@ modelBuilder.Entity<Employee>(entity =>
 
 # Question 10 
 
-**Extrait complet** : Flow d'une requete GET /api/employees
+**Extrait complet** : Flow d'une requête GET /api/employees
 
 ```csharp
 // 1. Controller
@@ -290,5 +290,5 @@ public async Task<List<Employee>> GetAllAsync()
 }
 ```
 
-**Question** : Tracez le flow complet de cette requete depuis le client HTTP jusqu'a la base de donnees et retour. Expliquez le role de chaque couche.
+**Question** : Tracez le flow complet de cette requête depuis le client HTTP jusqu'a la base de données et retour. Expliquez le rôle de chaque couche.
 
