@@ -5,7 +5,7 @@
 
 # Question 1
 
-Dans une architecture Clean, quelle couche est responsable de la logique metier ?
+Dans une architecture Clean, quelle couche est responsable de la logique métier ?
 
 * [ ] Controller
 * [ ] Service
@@ -49,7 +49,7 @@ Ou configure-t-on la Dependency Injection dans ASP.NET Core ?
 <br/>
 
 ### Question 5
-Que fait la methode SaveChangesAsync() dans Entity Framework ?
+Que fait la méthode SaveChangesAsync() dans Entity Framework ?
 
 * [ ] Sauvegarde un fichier
 * [ ] Commit les changements du DbContext vers la base de donnees
@@ -64,7 +64,7 @@ Que fait la methode SaveChangesAsync() dans Entity Framework ?
 <br/>
 
 # Question 6
-Dans XtraWork, qui accede directement a la base de donnees ?
+Dans XtraWork, qui accéde directement a la base de donnees ?
 
 * [ ] Controller
 * [ ] Service
@@ -86,7 +86,7 @@ Que signifie l'annotation [Required] sur une propriete d'entite ?
 <br/>
 
 ### Question 8
-Pourquoi utiliser async/await dans les methodes Repository ?
+Pourquoi utiliser async/await dans les méthodes Repository ?
 
 * [ ] C'est obligatoire en ASP.NET Core
 * [ ] Pour ne pas bloquer le thread pendant les operations I/O
@@ -97,7 +97,7 @@ Pourquoi utiliser async/await dans les methodes Repository ?
 <br/>
 
 ### Question 9
-Quelle commande applique les migrations a la base de donnees ?
+Quelle commande applique les migrations a la base de données ?
 
 * [ ] dotnet ef migrations add
 * [ ] dotnet ef database create
@@ -145,7 +145,7 @@ Que fait l'attribut [Authorize] sur un controller ?
 <br/>
 
 # Question 13
-Comment specifier qu'un endpoint est accessible seulement aux Admins ?
+Comment spécifier qu'un endpoint est accessible seulement aux Admins ?
 
 * [ ] [Authorize]
 * [ ] [Authorize(Roles = "Admin")]
@@ -189,7 +189,7 @@ Avec [ApiController], que se passe-t-il si ModelState.IsValid est false ?
 <br/>
 
 # Question 17
-Quelle bibliotheque de validation utilise XtraWork ?
+Quelle bibliothèque de validation utilise XtraWork ?
 
 * [ ] DataAnnotations
 * [ ] FluentValidation
@@ -200,7 +200,7 @@ Quelle bibliotheque de validation utilise XtraWork ?
 <br/>
 
 # Question 18
-Quelle est la difference entre HTTP 401 et HTTP 403 ?
+Quelle est la différence entre HTTP 401 et HTTP 403 ?
 
 * [ ] Pas de difference
 * [ ] 401 = pas authentifie, 403 = pas autorise
@@ -211,7 +211,7 @@ Quelle est la difference entre HTTP 401 et HTTP 403 ?
 <br/>
 
 # Question 19
-Dans XtraWork, quelle exception est levee si une ressource n'existe pas ?
+Dans XtraWork, quelle exception est levée si une ressource n'existe pas ?
 
 * [ ] ResourceNotFoundException
 * [ ] NotFoundException
