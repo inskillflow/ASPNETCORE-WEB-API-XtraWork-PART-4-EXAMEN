@@ -851,25 +851,4 @@ Un site malveillant peut appeler votre API.
 * [ ] AllowAnyOrigin + WithMethods("GET")
 * [ ] Pas de CORS en production
 
----
-
-## Fin de l'examen
-
-**Total** : 30 questions  
-**Bareme** :
-- 27-30 points : Excellent (90-100%)
-- 24-26 points : Tres bien (80-89%)
-- 21-23 points : Bien (70-79%) - Seuil de reussite
-- 18-20 points : Passable (60-69%)
-- < 18 points : Insuffisant - Echec
-
----
-
-**Nom de l'etudiant** : ___________________
-
-**Date** : ___________________
-
----
-
-**Le corrige est dans le fichier 08-EXAMEN-TROUBLESHOOTING-CORS-CORRIGE.md**
 
