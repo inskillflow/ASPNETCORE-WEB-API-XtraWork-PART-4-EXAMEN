@@ -1,20 +1,5 @@
 # EXAMEN PRATIQUE - TROUBLESHOOTING CORS
 
-## Instructions
-
-**Duree** : 45 minutes  
-**Questions** : 15 etudes de cas  
-**Bareme** : 2 points par cas (1 pour diagnostic + 1 pour solution)  
-**Total** : 30 points  
-**Seuil de reussite** : 21/30 (70%)
-
-**Format** : Chaque cas presente une erreur CORS. Vous devez :
-1. Identifier la cause
-2. Proposer la solution
-
-> Coche **une seule** reponse par question.
-
----
 
 ## CAS 1 : Origin Not Allowed
 
