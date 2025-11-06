@@ -1,26 +1,9 @@
-# EXAMEN NATIONAL - PARTIE 1
+# EXAMEN FINAL - PARTIE 1
 
 ## ASP.NET Core : Fondations, JWT, et API REST
 
----
 
-## Instructions
-
-**Duree** : 60 minutes
-**Questions** : 30 questions a choix multiple
-**Bareme** : 1 point par bonne reponse / 30 points total
-**Seuil de reussite** : 21/30 (70%)
-
-**Aucun document autorise**
-
-> Coche **une seule** reponse par question.
-> Format compatible GitHub (task lists).
-
----
-
-## Partie A : Fondations ASP.NET Core (Questions 1-10)
-
-### Question 1
+# Question 1
 
 Dans une architecture Clean, quelle couche est responsable de la logique metier ?
 
@@ -29,9 +12,10 @@ Dans une architecture Clean, quelle couche est responsable de la logique metier 
 * [ ] Repository
 * [ ] DbContext
 
----
+<br/>
+<br/>
 
-### Question 2
+# Question 2
 Qu'est-ce qu'Entity Framework Core ?
 
 * [ ] Un framework pour creer des API
@@ -39,9 +23,10 @@ Qu'est-ce qu'Entity Framework Core ?
 * [ ] Un outil de migration de base de donnees
 * [ ] Un systeme d'authentification
 
----
+<br/>
+<br/>
 
-### Question 3
+# Question 3
 Quel cycle de vie utilise-t-on pour un DbContext dans ASP.NET Core ?
 
 * [ ] Singleton
@@ -49,9 +34,10 @@ Quel cycle de vie utilise-t-on pour un DbContext dans ASP.NET Core ?
 * [ ] Scoped
 * [ ] Static
 
----
+<br/>
+<br/>
 
-### Question 4
+# Question 4
 Ou configure-t-on la Dependency Injection dans ASP.NET Core ?
 
 * [ ] Dans le constructeur des controllers
@@ -59,7 +45,8 @@ Ou configure-t-on la Dependency Injection dans ASP.NET Core ?
 * [ ] Dans appsettings.json
 * [ ] Dans le DbContext
 
----
+<br/>
+<br/>
 
 ### Question 5
 Que fait la methode SaveChangesAsync() dans Entity Framework ?
@@ -69,19 +56,14 @@ Que fait la methode SaveChangesAsync() dans Entity Framework ?
 * [ ] Cree une sauvegarde de la base
 * [ ] Enregistre les logs
 
----
+<br/>
+<br/>
 
-### Question 6
-Quelle methode permet de charger une relation dans EF Core pour eviter les requetes N+1 ?
 
-* [ ] .Join()
-* [ ] .Include()
-* [ ] .With()
-* [ ] .Load()
+<br/>
+<br/>
 
----
-
-### Question 7
+# Question 6
 Dans XtraWork, qui accede directement a la base de donnees ?
 
 * [ ] Controller
@@ -89,9 +71,10 @@ Dans XtraWork, qui accede directement a la base de donnees ?
 * [ ] Repository
 * [ ] Entity
 
----
+<br/>
+<br/>
 
-### Question 8
+### Question 7
 Que signifie l'annotation [Required] sur une propriete d'entite ?
 
 * [ ] La propriete doit etre initialisee dans le constructeur
@@ -99,9 +82,10 @@ Que signifie l'annotation [Required] sur une propriete d'entite ?
 * [ ] La propriete est obligatoire pour les tests
 * [ ] La propriete doit etre unique
 
----
+<br/>
+<br/>
 
-### Question 9
+### Question 8
 Pourquoi utiliser async/await dans les methodes Repository ?
 
 * [ ] C'est obligatoire en ASP.NET Core
@@ -109,9 +93,10 @@ Pourquoi utiliser async/await dans les methodes Repository ?
 * [ ] Pour ameliorer la securite
 * [ ] Pour utiliser moins de memoire
 
----
+<br/>
+<br/>
 
-### Question 10
+### Question 9
 Quelle commande applique les migrations a la base de donnees ?
 
 * [ ] dotnet ef migrations add
@@ -119,61 +104,13 @@ Quelle commande applique les migrations a la base de donnees ?
 * [ ] dotnet ef database update
 * [ ] dotnet ef schema apply
 
----
 
-## Partie B : JWT Authentification (Questions 11-20)
+<br/>
+<br/>
 
-### Question 11
-Que signifie JWT ?
 
-* [ ] Java Web Token
-* [ ] JSON Web Token
-* [ ] JavaScript Web Token
-* [ ] JSON Web Template
 
----
-
-### Question 12
-Combien de parties compose un JWT ?
-
-* [ ] 1
-* [ ] 2
-* [ ] 3
-* [ ] 4
-
----
-
-### Question 13
-Le payload d'un JWT est-il chiffre ?
-
-* [ ] Oui, chiffre avec AES-256
-* [ ] Oui, chiffre avec la cle secrete
-* [ ] Non, seulement encode en Base64
-* [ ] Oui, chiffre avec RSA
-
----
-
-### Question 14
-A quoi sert la signature d'un JWT ?
-
-* [ ] Chiffrer les donnees
-* [ ] Prouver que le token est authentique et n'a pas ete modifie
-* [ ] Compresser le token
-* [ ] Stocker le mot de passe
-
----
-
-### Question 15
-Dans XtraWork, quelle est la duree de validite d'un JWT ?
-
-* [ ] 15 minutes
-* [ ] 1 heure
-* [ ] 24 heures
-* [ ] 30 jours
-
----
-
-### Question 16
+# Question 10
 Quelle methode ASP.NET Core configure l'authentification JWT ?
 
 * [ ] builder.Services.AddJwt()
@@ -181,9 +118,10 @@ Quelle methode ASP.NET Core configure l'authentification JWT ?
 * [ ] builder.Services.ConfigureJwt()
 * [ ] builder.Services.UseJwtBearer()
 
----
+<br/>
+<br/>
 
-### Question 17
+### Question 11
 Dans quel ordre doivent etre les middlewares ?
 
 * [ ] UseAuthorization puis UseAuthentication
@@ -191,9 +129,11 @@ Dans quel ordre doivent etre les middlewares ?
 * [ ] L'ordre n'a pas d'importance
 * [ ] UseAuthentication seulement
 
----
 
-### Question 18
+<br/>
+<br/>
+
+# Question 12
 Que fait l'attribut [Authorize] sur un controller ?
 
 * [ ] Autorise tous les utilisateurs
@@ -201,9 +141,10 @@ Que fait l'attribut [Authorize] sur un controller ?
 * [ ] Genere un JWT
 * [ ] Verifie le mot de passe
 
----
+<br/>
+<br/>
 
-### Question 19
+# Question 13
 Comment specifier qu'un endpoint est accessible seulement aux Admins ?
 
 * [ ] [Authorize]
@@ -211,9 +152,10 @@ Comment specifier qu'un endpoint est accessible seulement aux Admins ?
 * [ ] [AdminOnly]
 * [ ] [RequireRole("Admin")]
 
----
+<br/>
+<br/>
 
-### Question 20
+# Question 14
 Dans XtraWork, ou le frontend envoie-t-il le JWT ?
 
 * [ ] Dans l'URL
@@ -221,51 +163,10 @@ Dans XtraWork, ou le frontend envoie-t-il le JWT ?
 * [ ] Dans le header Authorization
 * [ ] Dans un cookie
 
----
+<br/>
+<br/>
 
-## Partie C : API REST et Controllers (Questions 21-30)
-
-### Question 21
-Que signifie REST ?
-
-* [ ] Rapid Exchange State Transfer
-* [ ] Representational State Transfer
-* [ ] Remote Execution State Transfer
-* [ ] Resource Exchange Standard Transfer
-
----
-
-### Question 22
-Quelle methode HTTP utilise-t-on pour creer une ressource ?
-
-* [ ] GET
-* [ ] CREATE
-* [ ] POST
-* [ ] INSERT
-
----
-
-### Question 23
-Comment recuperer un parametre du body JSON ?
-
-* [ ] [FromBody]
-* [ ] [FromJson]
-* [ ] [BodyParameter]
-* [ ] Automatique
-
----
-
-### Question 24
-Quel status code retourner apres avoir cree une ressource ?
-
-* [ ] 200 OK
-* [ ] 201 Created
-* [ ] 202 Accepted
-* [ ] 204 No Content
-
----
-
-### Question 25
+# Question 15
 Quelle methode retourne HTTP 404 Not Found ?
 
 * [ ] Missing()
@@ -273,9 +174,10 @@ Quelle methode retourne HTTP 404 Not Found ?
 * [ ] Error404()
 * [ ] ResourceNotFound()
 
----
+<br/>
+<br/>
 
-### Question 26
+# Question 16
 Avec [ApiController], que se passe-t-il si ModelState.IsValid est false ?
 
 * [ ] Exception levee
@@ -283,9 +185,10 @@ Avec [ApiController], que se passe-t-il si ModelState.IsValid est false ?
 * [ ] Execution continue
 * [ ] 500 Internal Server Error
 
----
+<br/>
+<br/>
 
-### Question 27
+# Question 17
 Quelle bibliotheque de validation utilise XtraWork ?
 
 * [ ] DataAnnotations
@@ -293,9 +196,10 @@ Quelle bibliotheque de validation utilise XtraWork ?
 * [ ] System.ComponentModel.DataAnnotations
 * [ ] ValidationHelper
 
----
+<br/>
+<br/>
 
-### Question 28
+# Question 18
 Quelle est la difference entre HTTP 401 et HTTP 403 ?
 
 * [ ] Pas de difference
@@ -303,9 +207,10 @@ Quelle est la difference entre HTTP 401 et HTTP 403 ?
 * [ ] 401 = erreur serveur, 403 = erreur client
 * [ ] 401 = token invalide, 403 = token expire
 
----
+<br/>
+<br/>
 
-### Question 29
+# Question 19
 Dans XtraWork, quelle exception est levee si une ressource n'existe pas ?
 
 * [ ] ResourceNotFoundException
@@ -313,9 +218,10 @@ Dans XtraWork, quelle exception est levee si une ressource n'existe pas ?
 * [ ] EntityNotFoundException
 * [ ] MissingException
 
----
+<br/>
+<br/>
 
-### Question 30
+# Question 20
 Dans une API REST, les URLs doivent contenir :
 
 * [ ] Des verbes (getEmployees, createEmployee)
@@ -323,30 +229,5 @@ Dans une API REST, les URLs doivent contenir :
 * [ ] Des actions (retrieve, insert)
 * [ ] Peu importe
 
----
 
-## Fin de l'examen
-
-**Total** : 30 questions
-
-**Bareme de notation** :
-- 27-30 points : Excellent (90-100%)
-- 24-26 points : Tres bien (80-89%)
-- 21-23 points : Bien (70-79%) - Seuil de reussite
-- 18-20 points : Passable (60-69%)
-- < 18 points : Insuffisant (< 60%) - Echec
-
----
-
-**Date de l'examen** : ___________________
-
-**Nom de l'etudiant** : ___________________
-
-**Signature** : ___________________
-
----
-
-**Les reponses sont dans le fichier EXAMEN-NATIONAL-PARTIE-1-REPONSES.md**
-
-**A ne pas distribuer aux etudiants avant la correction**
 
